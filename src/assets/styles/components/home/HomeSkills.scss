@@ -1,0 +1,26 @@
+.home__skills {
+  background: $grey-3;
+  padding: 64px 20%;
+
+  @media (max-width: 650px) {
+    padding: 64px 10%;
+  }
+
+  h3 {
+    text-align: left;
+    margin: 64px 0;
+  }
+
+  div {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill {
+    flex: 0 0 120px;
+    margin-bottom: 32px;
+  }
+}

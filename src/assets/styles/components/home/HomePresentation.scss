@@ -1,0 +1,41 @@
+.home__presentation {
+  margin: 132px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  p {
+    width: 40vw;
+    text-align: justify;
+    margin-top: 64px;
+  }
+
+  @media (max-width: 1100px) {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      margin-top: 64px;
+      width: 273px;
+      height: 272px;
+    }
+
+    p {
+      width: 60vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: 212px;
+      height: 211px;
+    }
+
+    p {
+      width: 80vw;
+    }
+  }
+}
