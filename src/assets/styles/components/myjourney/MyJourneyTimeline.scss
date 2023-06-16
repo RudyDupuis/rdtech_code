@@ -1,0 +1,14 @@
+.my-journey-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 132px 0;
+
+  &--decorative-line {
+    height: 50px;
+    width: 5px;
+    background: $dark-primary;
+    border-radius: 10px;
+    margin: 32px auto;
+  }
+}

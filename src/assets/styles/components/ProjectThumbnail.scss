@@ -1,0 +1,40 @@
+.project-thumbnail {
+  width: 350px;
+  text-align: center;
+
+  h4 {
+    margin-top: 16px;
+    font-family: $font-bold;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+
+  &--date {
+    font-family: $font-medium;
+  }
+
+  img {
+    width: 350px;
+    height: 172px;
+
+    @media (max-width: 500px) {
+      width: 280px;
+      height: 137px;
+    }
+
+    &:hover {
+      border: 4px solid $primary;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 280px;
+
+    img {
+      width: 280px;
+      height: 137px;
+    }
+  }
+}
