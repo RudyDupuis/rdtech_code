@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-evenly;
 
+  @media (max-width: 767px) {
+    height: calc(100vh - env(safe-area-inset-top) - 96px);
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,7 @@
   }
 
   @media (max-width: 500px) {
+    height: calc(100vh - 96px);
     img {
       width: 210px;
       height: 160px;
