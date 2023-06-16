@@ -30,15 +30,16 @@ const HomePresentation = () => {
         )}
 
         <p>
-          Passionné par le bricolage et le numérique, j'ai fusionné ces deux
-          univers dans la conception de ce site. Tout comme le bricolage
-          nécessite l'utilisation d'outils, je donne vie à des concepts
-          numériques à l'aide des langages de programmation et des logiciels.
+          Passionné par le bricolage et le numérique, j&apos;ai fusionné ces
+          deux univers dans la conception de ce site. Tout comme le bricolage
+          nécessite l&apos;utilisation d&apos;outils, je donne vie à des
+          concepts numériques à l&apos;aide des langages de programmation et des
+          logiciels.
           <br />
           <br />
           Je suis développeur JavaScript et UX designer, impliqué dans toutes
           les étapes du processus, de la recherche utilisateur à la conception
-          graphique jusqu'au développement.
+          graphique jusqu&apos;au développement.
           <br />
           <br />
           Contactez moi pour discuter de vos besoins en développement web et UX
