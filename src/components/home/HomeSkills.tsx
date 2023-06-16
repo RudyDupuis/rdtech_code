@@ -8,7 +8,7 @@ const HomeSkills = () => {
 
       <h3>Hard skills</h3>
 
-      <div>
+      <div className="home__skills--list">
         {skillsData[0].map((skill) => (
           <Skill name={skill} key={skill} />
         ))}
@@ -16,7 +16,7 @@ const HomeSkills = () => {
 
       <h3>Soft skills</h3>
 
-      <div>
+      <div className="home__skills--list">
         {skillsData[1].map((skill) => (
           <Skill name={skill} key={skill} />
         ))}

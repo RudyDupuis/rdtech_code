@@ -11,16 +11,25 @@
     margin: 64px 0;
   }
 
-  div {
-    margin: 0 auto;
-    max-width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  &--list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
 
-  .skill {
-    flex: 0 0 120px;
-    margin-bottom: 32px;
+    @media (max-width: 1150px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (max-width: 950px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 750px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 450px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
