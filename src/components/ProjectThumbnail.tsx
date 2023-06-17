@@ -11,8 +11,8 @@ const ProjectThumbnail = ({ project }: { project: Journey }) => {
 
   const router = useRouter();
 
-  if (project.type === "project") {
-    useEffect(() => {
+  useEffect(() => {
+    if (project.type === "project") {
       const handleScroll = () => {
         const element = document.querySelector(`.${nameUrl}`);
         if (element) {
@@ -28,8 +28,8 @@ const ProjectThumbnail = ({ project }: { project: Journey }) => {
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
-    }, [router.asPath]);
-  }
+    }
+  }, [router.asPath]);
 
   const SaveScrollPosition = () => {
     const scrollPosition = window.scrollY || window.pageYOffset;
