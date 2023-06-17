@@ -15,16 +15,22 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
     "Formations uniquement",
   ];
 
-  const storedDisplayButton = localStorage.getItem("journey-display-buttons");
-  const parsedDisplayButton = storedDisplayButton
-    ? storedDisplayButton
-    : displayButtons[0];
+  const storedDisplayButton =
+    typeof localStorage !== "undefined"
+      ? localStorage.getItem("journey-display-buttons")
+      : null;
+  const parsedDisplayButton =
+    storedDisplayButton !== null ? storedDisplayButton : displayButtons[0];
   const [displayActive, setDisplayActive] =
     useState<string>(parsedDisplayButton);
   const classActive = "my-journey-settings--active";
 
-  const storedSkillsList = localStorage.getItem("journey-skills-buttons");
-  const parsedSkillsList = storedSkillsList ? JSON.parse(storedSkillsList) : [];
+  const storedSkillsList =
+    typeof localStorage !== "undefined"
+      ? localStorage.getItem("journey-skills-buttons")
+      : null;
+  const parsedSkillsList =
+    storedSkillsList !== null ? JSON.parse(storedSkillsList) : [];
   const [skillsList, setSkillsList] = useState<string[]>(parsedSkillsList);
 
   const skillsAddOrRemove = (skillName: string) => {
