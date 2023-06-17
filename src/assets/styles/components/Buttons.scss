@@ -40,3 +40,15 @@
     font-size: 20px;
   }
 }
+
+.project__return-button {
+  background: $primary;
+  color: $light;
+  padding: 8px 16px;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background: $secondary;
+  }
+}

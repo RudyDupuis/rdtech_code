@@ -6,6 +6,7 @@ import MyJourneySettings from "@/components/myjourney/MyJourneySettings";
 import { useState } from "react";
 import { Journey } from "@/interfaces/interface";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import { useBackPosition } from "@/helpers/useBackPosition";
 
 export default function MonParcours() {
   const [timelineData, setTimelineData] = useState<Journey[]>(journeyData);
@@ -13,6 +14,8 @@ export default function MonParcours() {
   const handleTimelineDataChange = (data: Journey[]) => {
     setTimelineData(data);
   };
+
+  useBackPosition();
 
   return (
     <main>

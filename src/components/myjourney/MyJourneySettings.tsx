@@ -10,21 +10,42 @@ interface Props {
 
 const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
   const displayButtons = [
-    "Tout Afficher",
+    "Tout afficher",
     "Projets uniquement",
     "Formations uniquement",
   ];
-  const [displayActive, setDisplayActive] = useState<string>(displayButtons[0]);
+
+  const storedDisplayButton = localStorage.getItem("journey-display-buttons");
+  const parsedDisplayButton = storedDisplayButton
+    ? storedDisplayButton
+    : displayButtons[0];
+  const [displayActive, setDisplayActive] =
+    useState<string>(parsedDisplayButton);
   const classActive = "my-journey-settings--active";
 
-  const [skillsList, setSkillsList] = useState<string[]>([]);
+  const storedSkillsList = localStorage.getItem("journey-skills-buttons");
+  const parsedSkillsList = storedSkillsList ? JSON.parse(storedSkillsList) : [];
+  const [skillsList, setSkillsList] = useState<string[]>(parsedSkillsList);
 
   const skillsAddOrRemove = (skillName: string) => {
+    let updatedSkillsList: string[];
+
     if (skillsList.includes(skillName)) {
-      setSkillsList(skillsList.filter((skill) => skill !== skillName));
+      updatedSkillsList = skillsList.filter((skill) => skill !== skillName);
     } else {
-      setSkillsList([...skillsList, skillName]);
+      setDisplayActive("Projets uniquement");
+      localStorage.setItem(
+        "journey-display-buttons",
+        String("Projets uniquement")
+      );
+      updatedSkillsList = [...skillsList, skillName];
     }
+
+    setSkillsList(updatedSkillsList);
+    localStorage.setItem(
+      "journey-skills-buttons",
+      JSON.stringify(updatedSkillsList)
+    );
   };
 
   const journeyDataSort = () => {
@@ -59,7 +80,10 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
         {displayButtons.map((btn) => (
           <button
             className={displayActive === btn ? classActive : ""}
-            onClick={() => setDisplayActive(btn)}
+            onClick={() => {
+              setDisplayActive(btn);
+              localStorage.setItem("journey-display-buttons", String(btn));
+            }}
             key={btn}
           >
             {btn}
