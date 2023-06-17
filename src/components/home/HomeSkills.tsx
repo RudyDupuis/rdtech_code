@@ -10,7 +10,7 @@ const HomeSkills = () => {
 
       <div className="home__skills--list">
         {skillsData[0].map((skill) => (
-          <Skill name={skill} key={skill} />
+          <Skill name={skill} color="normal" key={skill} />
         ))}
       </div>
 
@@ -18,7 +18,7 @@ const HomeSkills = () => {
 
       <div className="home__skills--list">
         {skillsData[1].map((skill) => (
-          <Skill name={skill} key={skill} />
+          <Skill name={skill} color="normal" key={skill} />
         ))}
       </div>
     </section>

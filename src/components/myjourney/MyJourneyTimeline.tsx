@@ -1,13 +1,17 @@
-import { journeyData } from "../../data/journeyData";
+import { Journey } from "@/interfaces/interface";
 import ProjectThumbnail from "../ProjectThumbnail";
 
-const MyJourneyTimeline = () => {
+interface Props {
+  timelineData: Journey[];
+}
+
+const MyJourneyTimeline = ({ timelineData }: Props) => {
   let years = 0;
-  const firstJourney = journeyData[0];
+  const firstJourney = timelineData[0];
 
   return (
     <section className="my-journey-timeline">
-      {journeyData.map((journey) => {
+      {timelineData.map((journey) => {
         const { name, dateNumb } = journey;
         const currentYear = dateNumb[1];
         const isFirstJourney = name === firstJourney.name;

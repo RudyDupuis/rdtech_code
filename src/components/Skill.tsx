@@ -2,9 +2,11 @@ import Image from "next/image";
 
 interface Props {
   name: string;
+  color: "normal" | "grey" | "active";
+  onClick?: () => void;
 }
 
-const Skill = ({ name }: Props) => {
+const Skill = ({ name, color, onClick }: Props) => {
   //Remove accents, transform . in - and uppercase in lowercase
   const link = name
     .toLowerCase()
@@ -12,10 +14,23 @@ const Skill = ({ name }: Props) => {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\./g, "-");
 
+  const srcCreate = (color: string) => {
+    switch (color) {
+      case "normal":
+        return `/skills/${link}.svg`;
+      case "grey":
+        return `/skills/grey/${link}-grey.svg`;
+      case "active":
+        return `/skills/active/${link}-active.svg`;
+      default:
+        return "";
+    }
+  };
+
   return (
-    <div className="skill">
+    <div className="skill" onClick={onClick}>
       <Image
-        src={`/skills/${link}.svg`}
+        src={srcCreate(color)}
         alt={`Un dessin du logo de ${name}`}
         width={80}
         height={80}

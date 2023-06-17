@@ -17,3 +17,26 @@
     background-color: $secondary;
   }
 }
+
+.scroll-to-top-button {
+  background: $primary;
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  font-size: 25px;
+  color: $light;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+
+  &:hover {
+    cursor: pointer;
+    background: $secondary;
+  }
+
+  @media (max-width: 550px) {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}

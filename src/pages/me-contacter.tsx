@@ -6,7 +6,7 @@ export default function MeContacter() {
     <main>
       <Nav />
 
-      <h1>Me Contacter</h1>
+      <h1 className="header-title">Me Contacter</h1>
 
       <Footer />
     </main>
