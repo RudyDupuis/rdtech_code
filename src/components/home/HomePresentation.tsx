@@ -1,6 +1,7 @@
 import { useScreenSizeDetect } from "@/helpers/useScreenSizeDetect";
 import Image from "next/image";
 import { useState } from "react";
+import LinkButton from "../LinkButton";
 
 const HomePresentation = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
@@ -18,7 +19,7 @@ const HomePresentation = () => {
       )}
 
       <div>
-        <h2>{isSmallScreen ? "Qui suis je ?" : "Un aperçu de qui je suis"}</h2>
+        <h2>Qui suis je ?</h2>
 
         {isSmallScreen && (
           <Image
@@ -37,14 +38,18 @@ const HomePresentation = () => {
           logiciels.
           <br />
           <br />
-          Je suis développeur JavaScript et UX designer, impliqué dans toutes
-          les étapes du processus, de la recherche utilisateur à la conception
-          graphique jusqu&apos;au développement.
+          Je suis <strong>développeur JavaScript</strong> et{" "}
+          <strong>UX designer</strong>, impliqué dans toutes les étapes du
+          processus, de la <strong>recherche utilisateur</strong> à la{" "}
+          <strong>conception graphique</strong> jusqu&apos;au{" "}
+          <strong>développement</strong>.
           <br />
           <br />
           Contactez moi pour discuter de vos besoins en développement web et UX
           design. Ensemble, nous réaliserons votre projet numérique.
         </p>
+
+        <LinkButton content="Me contacter" link="/me-contacter" />
       </div>
     </section>
   );

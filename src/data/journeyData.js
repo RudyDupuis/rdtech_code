@@ -21,7 +21,7 @@ export const journeyData = [
     date: "Mai 2023",
     dateNumb: [5, 2023],
     img: "/journey/mielsdupuis.png",
-    desc: "",
+    desc: "MielsDupuis est mon premier projet professionnel, un site vitrine pour mon entreprise apicole. J'ai réalisé toutes les étapes de ce projet, de la conception UX avec une approche centrée sur le design thinking, à l'intégration avec Next.js. J'ai également hébergé le site sur un VPS, ce qui a été un défi mais j'ai réussi. \n\nCe projet représente une aventure enrichissante où j'ai pu mettre en pratique mes compétences en UX et en développement avec Next.js. Héberger le projet sur un VPS m'a permis d'avoir un plus grand contrôle sur l'infrastructure du site.",
     smallDesc:
       "Création d’un site vitrine pour présenter mon activité apicole.",
     techUsed: [
@@ -64,7 +64,7 @@ export const journeyData = [
     date: "Février à Avril 2023",
     dateNumb: [2, 2023],
     img: "/journey/codewatchtower.png",
-    desc: "",
+    desc: "J'ai entrepris CodeWatchtower pour expérimenter la réalisation d'un projet en équipe. Il s'agissait d'un petit réseau social destiné aux développeurs. J'ai recruté une équipe composée d'une dizaine de développeurs juniors via LinkedIn pour collaborer sur ce projet. En tant que chef de projet et développeur front-end, j'ai assumé la responsabilité de guider l'équipe. \n\nCe projet a été une expérience précieuse, car c'était la première fois que je gérais une équipe. J'ai appris énormément de choses tout au long du processus. Malheureusement, en raison de la recherche d'emploi ou de stages des membres de l'équipe, je n'ai pas pu maintenir l'équipe jusqu'à la fin du projet. La partie backend n'a pas été complétée, et je suis le seul à avoir terminé ma part du développement front-end. \n\nMalgré ces difficultés, CodeWatchtower a été une occasion d'acquérir une expérience précieuse en matière de gestion de projet et de leadership.",
     smallDesc: "Création d’un petit réseaux social en équipe.",
     techUsed: [
       "Html",
@@ -91,7 +91,7 @@ export const journeyData = [
     date: "Janvier à Février 2023",
     dateNumb: [1, 2023],
     img: "/journey/portfolio.png",
-    desc: "",
+    desc: "Ayant achevé plusieurs projets et tout juste terminé d'apprendre les bases de React, j'ai décidé de me lancer dans la création de mon portfolio pour y présenter mes réalisations. Pour ce faire, j'ai conçu un portfolio en une seule page, s'adaptant à la taille de l'écran, avec une navigation verticale. J'ai également réalisé plusieurs animations complexes, telles que la boîte à outils présente sur l'écran d'accueil, ainsi que des animations de transition entre chaque section.",
     smallDesc: "Création d’un portfolio.",
     techUsed: [
       "Html",
@@ -114,7 +114,7 @@ export const journeyData = [
     date: "Décembre 2022",
     dateNumb: [12, 2022],
     img: "/journey/stratege.png",
-    desc: "",
+    desc: "Il y a quelques années, j'ai entrepris de créer un jeu de plateau similaire aux échecs ou aux dames. Puis j'ai décidé de le développer en version web afin de me mettre au défi. \n\nCe projet s'est avéré complexe, car il sortait de l'utilisation habituelle de JavaScript, et la création des fonctions pour gérer les déplacements des pièces s'est avérée assez difficile. Malgré cela, je suis fier du résultat obtenu, compte tenu de mes connaissances en JavaScript que j'avais. \n\nBien que l'interface utilisateur ne soit pas exceptionnelle, le fonctionnement du jeu est fluide et efficace. Ce projet m'a permis de repousser mes limites et de mettre en pratique mes compétences en programmation tout en explorant des domaines moins conventionnels du développement web.",
     smallDesc: "Création d’un jeux de plateau en ligne.",
     techUsed: ["Html", "Css", "Javascript", "Git"],
     projectLink: "https://rudydupuis.github.io/Strategist/",
@@ -128,11 +128,11 @@ export const journeyData = [
     date: "Novembre 2022 à Janvier 2023",
     dateNumb: [11, 2022],
     img: "/journey/miniprojets.png",
-    desc: "",
+    desc: "Lorsque j'ai acquis les bases de JavaScript, j'ai entrepris une série de mini projets pour explorer les multiples possibilités offertes par ce langage. J'ai réalisé divers projets simples tels qu'une calculatrice, des petits jeux, des composants web, l'utilisation d'API, et bien d'autres encore. \n\nCes mini projets m'ont permis d'approfondir ma compréhension de JavaScript et d'expérimenter différentes fonctionnalités. Chaque projet était une occasion d'apprendre et de mettre en pratique mes connaissances nouvellement acquises. Ils ont été essentiels pour consolider mes compétences en programmation et m'ont donné une vision plus concrète des applications pratiques de JavaScript.",
     smallDesc: "Répertoire de nombreux petits projets.",
     techUsed: ["Html", "Css", "Sass", "Javascript", "Git"],
-    projectLink: "https://github.com/RudyDupuis/Mini_projets",
-    codeLink: "https://rudydupuis.github.io/Mini_projets/",
+    projectLink: "https://rudydupuis.github.io/Mini_projets/",
+    codeLink: "https://github.com/RudyDupuis/Mini_projets",
     docLink: null,
   },
   {
@@ -142,9 +142,9 @@ export const journeyData = [
     date: "Octobre à Décembre 2022",
     dateNumb: [10, 2022],
     img: "/journey/maquettemielsdupuis.png",
-    desc: "",
+    desc: "La Maquette MielsDupuis a été mon tout premier vrai projet en tant que développeur. Après avoir terminé ma formation en développement front-end, j'ai décidé de me lancer dans un défi d'intégration web. J'ai créé un site de e-commerce et me suis concentré sur les animations CSS pour enrichir l'expérience utilisateur. Ce projet m'a permis de consolider mes compétences en intégration web tout en explorant les possibilités offertes par les animations CSS.",
     smallDesc: "Création d’une maquette pour un site d'e-commerce.",
-    techUsed: ["Html", "Css", "Sass", "Javascript", "Git"],
+    techUsed: ["Html", "Css", "Sass", "Javascript", "Git", "Inkscape"],
     projectLink:
       "https://rudydupuis.github.io/maquette-mielsdupuis-en-html-sass-js/",
     codeLink:
@@ -173,7 +173,8 @@ export const journeyData = [
     dateNumb: [8, 2022],
     img: null,
     desc: null,
-    smallDesc: "Apprentissage des bases du développement frontend.",
+    smallDesc:
+      "Apprentissage des bases du développement frontend en autodidacte.",
     techUsed: null,
     projectLink: null,
     codeLink: null,

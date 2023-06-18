@@ -4,7 +4,7 @@ import { skillsData } from "../../data/skillsData";
 const HomeSkills = () => {
   return (
     <section className="home__skills">
-      <h2>Ma boite à outils de compétences</h2>
+      <h2>Mes compétences</h2>
 
       <h3>Hard skills</h3>
 

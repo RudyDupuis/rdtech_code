@@ -30,8 +30,8 @@
 
     p:first-child {
       width: 500px;
-      height: 10px;
-      background: black;
+      text-align: justify;
+      white-space: pre-line;
     }
 
     &--right {
