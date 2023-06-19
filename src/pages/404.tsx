@@ -8,7 +8,7 @@ const Error404 = () => {
       <Nav />
 
       <section className="error-404">
-        <h1>Il y a une erreur 404 !</h1>
+        <h1>Erreur 404</h1>
         <Image
           src="/home/tools-box.svg"
           alt="Un dessin d'une boite à outils"

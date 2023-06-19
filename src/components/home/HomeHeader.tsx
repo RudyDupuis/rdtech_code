@@ -12,7 +12,7 @@ const HomeHeader = () => {
       <div>
         <h1>Rudy Dupuis</h1>
         <p>
-          Dévelopeur javascript <br /> Ux designer
+          Dévelopeur JavaScript <br /> Ux Designer
         </p>
 
         {isSmallScreen && (
