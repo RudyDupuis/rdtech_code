@@ -11,10 +11,12 @@ const ProjectThumbnail = ({ project }: { project: Journey }) => {
 
   const router = useRouter();
 
+  //know if ProjectThumbnail is in the center of the screen
   useEffect(() => {
     if (project.type === "project") {
       const handleScroll = () => {
         const element = document.querySelector(`.${nameUrl}`);
+
         if (element) {
           const rect = element.getBoundingClientRect();
           const isMiddle =

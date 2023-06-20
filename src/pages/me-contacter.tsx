@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
-import Head from "next/head";
+import CustumHead from "@/components/CustumHead";
 
 export default function MeContacter() {
   const form = useRef<HTMLFormElement>(null);
@@ -44,15 +44,16 @@ export default function MeContacter() {
 
   return (
     <main>
-      <Head>
-        <title>
-          Rudy Dupuis - Développeur JavaScript et UX Designer | Me Contacter
-        </title>
-        <meta
-          name="description"
-          content="Besoin de mes services en développement web ? Utilisez le formulaire de contact pour me laisser votre votre message. Je serai ravi de discuter de votre projet et de vous apporter mon expertise. Contactez-moi dès maintenant et travaillons ensemble pour concrétiser votre vision"
-        />
-      </Head>
+      <CustumHead
+        title={
+          "Rudy Dupuis - Développeur JavaScript et UX Designer | Me Contacter"
+        }
+        desc={
+          "Besoin de mes services en développement web ? Utilisez le formulaire de contact pour me laisser votre votre message. Je serai ravi de discuter de votre projet et de vous apporter mon expertise. Contactez-moi dès maintenant et travaillons ensemble pour concrétiser votre vision"
+        }
+        og={false}
+      />
+
       <Nav />
 
       <h1 className="header-title">Me Contacter</h1>

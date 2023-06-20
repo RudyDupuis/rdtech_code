@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Journey } from "@/interfaces/interface";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { useBackPosition } from "@/helpers/useBackPosition";
-import Head from "next/head";
+import CustumHead from "@/components/CustumHead";
 
 export default function MonParcours() {
   const [timelineData, setTimelineData] = useState<Journey[]>(journeyData);
@@ -20,15 +20,15 @@ export default function MonParcours() {
 
   return (
     <main>
-      <Head>
-        <title>
-          Rudy Dupuis - Développeur JavaScript et UX Designer | Mon Parcours
-        </title>
-        <meta
-          name="description"
-          content="Découvrez mon parcours en tant que développeur JavaScript et Ux Designer. Explorez mes compétences en HTML, CSS, JavaScript, TypeScript, Git, Node.js, React.js, Next.js et SEO dans mes différents projets. Consultez mes projets récents, tels que la création d'un site vitrine pour mon activité apicole et un petit réseau social en équipe."
-        />
-      </Head>
+      <CustumHead
+        title={
+          "Rudy Dupuis - Développeur JavaScript et UX Designer | Mon Parcours"
+        }
+        desc={
+          "Découvrez mon parcours en tant que développeur JavaScript et Ux Designer. Explorez mes compétences en HTML, CSS, JavaScript, TypeScript, Git, Node.js, React.js, Next.js et SEO dans mes différents projets. Consultez mes projets récents, tels que la création d'un site vitrine pour mon activité apicole et un petit réseau social en équipe."
+        }
+        og={false}
+      />
 
       <Nav />
 

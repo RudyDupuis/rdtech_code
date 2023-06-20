@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 export const useScreenSizeDetect = (
   setIsSmallScreen: (isSmallScreen: boolean) => void,
   breakpoint: number

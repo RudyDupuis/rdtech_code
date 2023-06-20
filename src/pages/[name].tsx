@@ -7,13 +7,19 @@ import LinkButton from "@/components/LinkButton";
 import { useRouter } from "next/router";
 import Skill from "@/components/Skill";
 import Footer from "@/components/Footer";
-import Head from "next/head";
+import CustumHead from "@/components/CustumHead";
 
 interface Props {
   project: Journey;
 }
 
 export default function ProjectPage({ project }: Props) {
+  const buttonsList = [
+    ["Découvrir le projet", project.projectLink],
+    ["Voir le code", project.codeLink],
+    ["Lire la documentation", project.docLink],
+  ];
+
   const router = useRouter();
 
   const goBack = () => {
@@ -21,15 +27,11 @@ export default function ProjectPage({ project }: Props) {
   };
   return (
     <main className="project">
-      <Head>
-        <title>
-          Rudy Dupuis - Développeur JavaScript et UX Designer | {project.name}
-        </title>
-        <meta
-          name="description"
-          content={`Découvrez le projet ${project.name}. Ce projet a été réalisé en ${project.date}. Explorez ce projet pour en savoir plus sur son concept, ses fonctionnalités et les défis surmontés lors de sa réalisation. N'hésitez pas à me contacter si vous souhaitez en discuter davantage ou si vous avez des questions. Ensemble, nous pouvons réaliser votre vision numérique.`}
-        />
-      </Head>
+      <CustumHead
+        title={`Rudy Dupuis - Développeur JavaScript et UX Designer | ${project.name}`}
+        desc={`Découvrez le projet ${project.name}. Ce projet a été réalisé en ${project.date}. Explorez ce projet pour en savoir plus sur son concept, ses fonctionnalités et les défis surmontés lors de sa réalisation. N'hésitez pas à me contacter si vous souhaitez en discuter davantage ou si vous avez des questions. Ensemble, nous pouvons réaliser votre vision numérique.`}
+        og={false}
+      />
 
       <Nav />
 
@@ -68,26 +70,15 @@ export default function ProjectPage({ project }: Props) {
       </section>
 
       <section className="project__buttons">
-        {project.projectLink && (
-          <LinkButton
-            content="Découvrir le projet"
-            link={project.projectLink}
-            blank={true}
-          />
-        )}
-        {project.codeLink && (
-          <LinkButton
-            content="Voir le code"
-            link={project.codeLink}
-            blank={true}
-          />
-        )}
-        {project.docLink && (
-          <LinkButton
-            content="Lire la documentation"
-            link={project.docLink}
-            blank={true}
-          />
+        {buttonsList.map(
+          (button) =>
+            button[1] && (
+              <LinkButton
+                content={button[0] ? button[0] : ""}
+                link={button[1]}
+                blank={true}
+              />
+            )
         )}
       </section>
 

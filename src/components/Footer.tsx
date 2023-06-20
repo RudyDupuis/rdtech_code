@@ -31,6 +31,7 @@ const Footer = () => {
           </svg>
         </Link>
       </div>
+
       <p>Copyright © {new Date().getFullYear()} Rudy Dupuis</p>
     </footer>
   );

@@ -20,6 +20,7 @@ const Nav = () => {
           priority
         />
       </Link>
+
       <ul>
         <li className={router.pathname === "/mon-parcours" ? "active" : ""}>
           <Link href="/mon-parcours">

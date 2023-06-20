@@ -7,9 +7,10 @@ const ScrollToTopButton = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  //display button
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > window.innerHeight * 0.5) {
+      if (window.scrollY > window.innerHeight * 0.5) {
         setShowButton(true);
       } else {
         setShowButton(false);
