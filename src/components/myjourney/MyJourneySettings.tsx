@@ -15,23 +15,22 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
     "Formations uniquement",
   ];
 
-  const storedDisplayButton =
-    typeof localStorage !== "undefined"
-      ? localStorage.getItem("journey-display-buttons")
-      : null;
-  const parsedDisplayButton =
-    storedDisplayButton !== null ? storedDisplayButton : displayButtons[0];
-  const [displayActive, setDisplayActive] =
-    useState<string>(parsedDisplayButton);
-  const classActive = "my-journey-settings--active";
+  const [displayActive, setDisplayActive] = useState<string>(displayButtons[0]);
+  const [skillsList, setSkillsList] = useState<string[]>([]);
 
-  const storedSkillsList =
-    typeof localStorage !== "undefined"
-      ? localStorage.getItem("journey-skills-buttons")
-      : null;
-  const parsedSkillsList =
-    storedSkillsList !== null ? JSON.parse(storedSkillsList) : [];
-  const [skillsList, setSkillsList] = useState<string[]>(parsedSkillsList);
+  //retrieve data from localstorage to client side display
+  useEffect(() => {
+    const storedDisplayValue = localStorage.getItem("journey-display-buttons");
+    const storedSkillsValue = localStorage.getItem("journey-skills-buttons");
+
+    const initialDisplayValue =
+      storedDisplayValue !== null ? storedDisplayValue : displayButtons[0];
+    const initialSkillsValue =
+      storedSkillsValue !== null ? JSON.parse(storedSkillsValue) : [];
+
+    setDisplayActive(initialDisplayValue);
+    setSkillsList(initialSkillsValue);
+  }, []);
 
   const skillsAddOrRemove = (skillName: string) => {
     let updatedSkillsList: string[];
@@ -40,10 +39,7 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
       updatedSkillsList = skillsList.filter((skill) => skill !== skillName);
     } else {
       setDisplayActive("Projets uniquement");
-      localStorage.setItem(
-        "journey-display-buttons",
-        String("Projets uniquement")
-      );
+      localStorage.setItem("journey-display-buttons", "Projets uniquement");
       updatedSkillsList = [...skillsList, skillName];
     }
 
@@ -54,7 +50,8 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
     );
   };
 
-  const journeyDataSort = () => {
+  //Sort journeyData
+  useEffect(() => {
     let data = journeyData;
 
     if (displayActive === "Projets uniquement") {
@@ -72,10 +69,6 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
     );
 
     onTimelineChange(data);
-  };
-
-  useEffect(() => {
-    journeyDataSort();
   }, [displayActive, skillsList]);
 
   return (
@@ -85,10 +78,12 @@ const MyJourneySettings = ({ journeyData, onTimelineChange }: Props) => {
       <div className="my-journey-settings--display">
         {displayButtons.map((btn) => (
           <button
-            className={displayActive === btn ? classActive : ""}
+            className={
+              displayActive === btn ? "my-journey-settings--active" : ""
+            }
             onClick={() => {
               setDisplayActive(btn);
-              localStorage.setItem("journey-display-buttons", String(btn));
+              localStorage.setItem("journey-display-buttons", btn);
             }}
             key={btn}
           >
