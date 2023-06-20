@@ -1,10 +1,14 @@
 import LinkButton from "../LinkButton";
 import { useScreenSizeDetect } from "@/helpers/useScreenSizeDetect";
+import dynamic from "next/dynamic";
 import { useState } from "react";
-import ToolsBoxAnim from "../animation/ToolsBoxAnim";
+const ToolsBoxAnim = dynamic(
+  () => import("../animation/ToolsBoxAnim"),
+  { ssr: false } // Prevent server-side rendering
+);
 
 const HomeHeader = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(true);
   useScreenSizeDetect(setIsSmallScreen, 850);
 
   return (
