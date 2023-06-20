@@ -77,6 +77,7 @@ export default function ProjectPage({ project }: Props) {
                 content={button[0] ? button[0] : ""}
                 link={button[1]}
                 blank={true}
+                key={button[0]}
               />
             )
         )}
