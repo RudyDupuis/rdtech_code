@@ -10,7 +10,7 @@ const Error404 = () => {
       <section className="error-404">
         <h1>Erreur 404</h1>
         <Image
-          src="/home/tools-box.svg"
+          src="/tools-box/tools-box-full.svg"
           alt="Un dessin d'une boite à outils"
           width={175}
           height={133}

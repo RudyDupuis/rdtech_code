@@ -1,42 +1,26 @@
-import Image from "next/image";
 import LinkButton from "../LinkButton";
 import { useScreenSizeDetect } from "@/helpers/useScreenSizeDetect";
 import { useState } from "react";
+import ToolsBoxAnim from "../animation/ToolsBoxAnim";
 
 const HomeHeader = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(true);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   useScreenSizeDetect(setIsSmallScreen, 850);
 
   return (
     <header className="home__header">
-      <div>
+      <div className="home__header__div">
         <h1>Rudy Dupuis</h1>
         <p>
           Dévelopeur JavaScript <br /> Ux Designer
         </p>
 
-        {isSmallScreen && (
-          <Image
-            src="/home/tools-box.svg"
-            alt="Un dessin d'une boite à outils"
-            width={350}
-            height={266}
-            priority
-          />
-        )}
+        {isSmallScreen && <ToolsBoxAnim />}
 
         <LinkButton content="Découvrir mon profil" link="#presentation" />
       </div>
 
-      {!isSmallScreen && (
-        <Image
-          src="/home/tools-box.svg"
-          alt="Un dessin d'une boite à outils"
-          width={350}
-          height={266}
-          priority
-        />
-      )}
+      {!isSmallScreen && <ToolsBoxAnim />}
     </header>
   );
 };
