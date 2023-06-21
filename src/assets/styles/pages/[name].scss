@@ -9,6 +9,10 @@
     justify-content: space-between;
     padding: 32px 15% 64px 15%;
 
+    img {
+      border: 3px solid $dark-primary;
+    }
+
     div {
       h1,
       h2 {
