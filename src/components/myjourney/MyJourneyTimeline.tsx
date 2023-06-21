@@ -10,7 +10,7 @@ const MyJourneyTimeline = ({ timelineData }: Props) => {
   const firstJourney = timelineData[0];
 
   return (
-    <section className="my-journey-timeline">
+    <section className="my-journey-timeline" id="parcours">
       {timelineData.map((journey) => {
         const { name, dateNumb } = journey;
         const currentYear = dateNumb[1];

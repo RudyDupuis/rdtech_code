@@ -8,6 +8,7 @@ import { Journey } from "@/interfaces/interface";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { useBackPosition } from "@/helpers/useBackPosition";
 import CustumHead from "@/components/CustumHead";
+import MyJourneyInsctructions from "@/components/myjourney/MyJourneyInstructions";
 
 export default function MonParcours() {
   const [timelineData, setTimelineData] = useState<Journey[]>(journeyData);
@@ -33,6 +34,8 @@ export default function MonParcours() {
       <Nav />
 
       <h1 className="header-title">Mon parcours</h1>
+
+      <MyJourneyInsctructions />
 
       <MyJourneySettings
         onTimelineChange={handleTimelineDataChange}
