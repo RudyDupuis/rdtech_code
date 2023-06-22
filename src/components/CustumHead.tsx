@@ -17,9 +17,9 @@ const CustumHead = ({ title, desc, og }: Props) => {
           <meta property="og:description" content={desc} />
           <meta
             property="og:image"
-            content="https://rdtech-code.vercel.app/open-graph.png"
+            content="https://rd-tech.fr/open-graph.png"
           />
-          <meta property="og:url" content="https://rdtech-code.vercel.app//" />
+          <meta property="og:url" content="https://rd-tech.fr" />
           <meta property="og:type" content="website" />
           <meta
             property="og:site_name"
