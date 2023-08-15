@@ -28,7 +28,7 @@ export default function ProjectPage({ project }: Props) {
   return (
     <main className="project">
       <CustumHead
-        title={`Rudy Dupuis - Développeur JavaScript et UX Designer | ${project.name}`}
+        title={`Rudy Dupuis - Développeur Web et Web mobile et UX Designer | ${project.name}`}
         desc={`Découvrez le projet ${project.name}. Ce projet a été réalisé en ${project.date}. Explorez ce projet pour en savoir plus sur son concept, ses fonctionnalités et les défis surmontés lors de sa réalisation. N'hésitez pas à me contacter si vous souhaitez en discuter davantage ou si vous avez des questions. Ensemble, nous pouvons réaliser votre vision numérique.`}
         og={false}
       />

@@ -23,10 +23,10 @@ export default function MonParcours() {
     <main>
       <CustumHead
         title={
-          "Rudy Dupuis - Développeur JavaScript et UX Designer | Mon Parcours"
+          "Rudy Dupuis - Développeur Web et Web mobile et UX Designer | Mon Parcours"
         }
         desc={
-          "Découvrez mon parcours en tant que développeur JavaScript et Ux Designer. Explorez mes compétences en HTML, CSS, JavaScript, TypeScript, Git, Node.js, React.js, Next.js et SEO dans mes différents projets. Consultez mes projets récents, tels que la création d'un site vitrine pour mon activité apicole et un petit réseau social en équipe."
+          "Découvrez mon parcours en tant que développeur Web et Web mobile et Ux Designer. Explorez mes compétences en HTML, CSS, JavaScript, TypeScript, Git, Node.js, React.js, Next.js et SEO dans mes différents projets. Consultez mes projets récents, tels que la création d'un site vitrine pour mon activité apicole et un petit réseau social en équipe."
         }
         og={false}
       />

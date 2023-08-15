@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <main>
       <CustumHead
-        title={"Rudy Dupuis - Développeur JavaScript et UX Designer"}
+        title={"Rudy Dupuis - Développeur Web et Web mobile et UX Designer"}
         desc={
-          "Je suis Rudy Dupuis, un développeur JavaScript et UX Designer passionné. J'ai fusionné ma passion pour le bricolage et le numérique dans la conception de ce site. Découvrez mon parcours et mes compétences en développement web et UX design. Contactez-moi pour discuter de votre projet numérique."
+          "Je suis Rudy Dupuis, un développeur Web et Web mobile et UX Designer passionné. J'ai fusionné ma passion pour le bricolage et le numérique dans la conception de ce site. Découvrez mon parcours et mes compétences en développement web et UX design. Contactez-moi pour discuter de votre projet numérique."
         }
         og={true}
       />

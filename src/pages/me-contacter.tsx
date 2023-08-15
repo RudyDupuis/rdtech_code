@@ -46,7 +46,7 @@ export default function MeContacter() {
     <main>
       <CustumHead
         title={
-          "Rudy Dupuis - Développeur JavaScript et UX Designer | Me Contacter"
+          "Rudy Dupuis - Développeur Web et Web mobile et UX Designer | Me Contacter"
         }
         desc={
           "Besoin de mes services en développement web ? Utilisez le formulaire de contact pour me laisser votre votre message. Je serai ravi de discuter de votre projet et de vous apporter mon expertise. Contactez-moi dès maintenant et travaillons ensemble pour concrétiser votre vision"

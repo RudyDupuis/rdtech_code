@@ -16,7 +16,8 @@ const HomeHeader = () => {
       <div className="home__header__div">
         <h1>Rudy Dupuis</h1>
         <p>
-          Dévelopeur JavaScript <br /> Ux Designer
+          Dévelopeur Web et Web mobile
+          <br /> Ux Designer
         </p>
 
         {isSmallScreen && <ToolsBoxAnim />}

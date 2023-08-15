@@ -15,6 +15,21 @@
 
 export const journeyData = [
   {
+    type: "study",
+    name: " Bac + 2 | Développeur Web et Web Mobile",
+    title: null,
+    date: "Juillet 2023 - Aujourd'hui",
+    dateNumb: [7, 2023],
+    img: null,
+    desc: null,
+    smallDesc:
+      "Formation au sein de l'école ENI ecole informatique. Code RNCP : RNCP31114 (EN COURS)",
+    techUsed: null,
+    projectLink: null,
+    codeLink: null,
+    docLink: null,
+  },
+  {
     type: "project",
     name: "RD Tech",
     title: "Projet en solo",
