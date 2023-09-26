@@ -14,7 +14,7 @@ const HomeProjects = () => {
       <div className="home__projects--list">
         <ProjectThumbnail project={projectFilter("MielsDupuis")} />
         <ProjectThumbnail project={projectFilter("Stratège")} />
-        <ProjectThumbnail project={projectFilter("CodeWatchtower")} />
+        <ProjectThumbnail project={projectFilter("OSNA")} />
       </div>
 
       <LinkButton content="Voir mon parcours" link="/mon-parcours" />

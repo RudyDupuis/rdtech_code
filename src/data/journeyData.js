@@ -15,6 +15,22 @@
 
 export const journeyData = [
   {
+    type: "project",
+    name: "OSNA",
+    title: "Projet en groupe",
+    date: "Septembre 2023",
+    dateNumb: [9, 2023],
+    img: "/journey/osna.png",
+    desc: "Le projet OSNA (Objets Solidaires pour une Nouvelle Alternative) a été réalisé en Java EE lors de ma formation à l'ENI. Cette expérience de développement collaboratif a été exécutée dans un délai serré de deux semaines, ajoutant une dimension de défi à notre démarche. La contrainte clé était de créer l'intégralité de la plateforme en utilisant exclusivement le langage Java. \n\n Pour donner forme à OSNA, nous avons adopté le modèle de conception MVC (Modèle-Vue-Contrôleur). La partie Vue et Contrôleur a été réalisée grâce aux JSP et aux Servlets. La partie Modèle a été organisée en trois couches distinctes : BO (Business Objects), DAL (Data Access Layer), et BLL (Business Logic Layer). La base de données utilisée est Microsoft SQL.",
+    smallDesc:
+      "Création d'un site pour une association fictive qui promeut la réutilisation et le don d'objets",
+    techUsed: ["Html", "Css", "Java", "Sql", "Git", "Figma"],
+    projectLink: null,
+    codeLink: "https://github.com/RudyDupuis/OSNA_group",
+    docLink:
+      "https://hickory-dormouse-c7a.notion.site/OSNA-9c6dd84194be4c268364f9b418f7c0ac?pvs=4",
+  },
+  {
     type: "study",
     name: " Bac + 2 | Développeur Web et Web Mobile",
     title: null,
