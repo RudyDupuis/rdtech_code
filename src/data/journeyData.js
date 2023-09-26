@@ -25,7 +25,8 @@ export const journeyData = [
     smallDesc:
       "Création d'un site pour une association fictive qui promeut la réutilisation et le don d'objets",
     techUsed: ["Html", "Css", "Java", "Sql", "Git", "Figma"],
-    projectLink: null,
+    projectLink:
+      "https://hickory-dormouse-c7a.notion.site/Pr-sentation-du-site-47057021dcdb4596b9cfff1dc9396754",
     codeLink: "https://github.com/RudyDupuis/OSNA_group",
     docLink:
       "https://hickory-dormouse-c7a.notion.site/OSNA-9c6dd84194be4c268364f9b418f7c0ac?pvs=4",
@@ -68,8 +69,7 @@ export const journeyData = [
       "Figma",
       "Inkscape",
     ],
-    projectLink:
-      "https://hickory-dormouse-c7a.notion.site/Pr-sentation-du-site-47057021dcdb4596b9cfff1dc9396754",
+    projectLink: null,
     codeLink: "https://github.com/RudyDupuis/rdtech_code",
     docLink:
       "https://hickory-dormouse-c7a.notion.site/RD-Tech-e076f39cd882468088f0922c71a7df88?pvs=4",
