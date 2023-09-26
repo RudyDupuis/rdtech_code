@@ -68,7 +68,8 @@ export const journeyData = [
       "Figma",
       "Inkscape",
     ],
-    projectLink: null,
+    projectLink:
+      "https://hickory-dormouse-c7a.notion.site/Pr-sentation-du-site-47057021dcdb4596b9cfff1dc9396754",
     codeLink: "https://github.com/RudyDupuis/rdtech_code",
     docLink:
       "https://hickory-dormouse-c7a.notion.site/RD-Tech-e076f39cd882468088f0922c71a7df88?pvs=4",
