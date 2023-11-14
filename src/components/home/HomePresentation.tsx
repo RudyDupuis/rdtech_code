@@ -40,7 +40,7 @@ const HomePresentation = () => {
           <br />
           Je suis <strong>développeur Web</strong> avec une appétence pour
           l&apos;
-          <strong>UX designer</strong>, impliqué dans toutes les étapes du
+          <strong>UX design</strong>, impliqué dans toutes les étapes du
           processus, de la <strong>recherche utilisateur</strong> à la{" "}
           <strong>conception graphique</strong> jusqu&apos;au{" "}
           <strong>développement</strong>.
