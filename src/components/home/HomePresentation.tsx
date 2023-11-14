@@ -38,7 +38,7 @@ const HomePresentation = () => {
           logiciels.
           <br />
           <br />
-          Je suis <strong>développeur Web et Web mobile</strong> et{" "}
+          Je suis <strong>développeur Web</strong> avec une appétence pour l'
           <strong>UX designer</strong>, impliqué dans toutes les étapes du
           processus, de la <strong>recherche utilisateur</strong> à la{" "}
           <strong>conception graphique</strong> jusqu&apos;au{" "}

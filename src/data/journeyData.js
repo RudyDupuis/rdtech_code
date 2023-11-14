@@ -16,6 +16,32 @@
 export const journeyData = [
   {
     type: "project",
+    name: "ENI Sortir",
+    title: "Projet en solo",
+    date: "Novembre 2023",
+    dateNumb: [11, 2023],
+    img: "/journey/eni-sortir.png",
+    desc: "ENI Sortir, un projet fictif élaboré avec Symfony 5.4.*, vise à simplifier l'organisation de sorties entre les étudiants de l'école ENI. Pour sa réalisation, je me suis inspiré d'un énoncé d'exercice de ma formation à l'école ENI, en développant ma vision conformément à une sorte de cahier des charges. Mon objectif était de créer un site répondant de manière optimale à cette demande spécifique.",
+    smallDesc:
+      "Création d'un site fictif pour gérer l'organisation des sorties entre les éléves de l'ecole ENI",
+    techUsed: [
+      "Html",
+      "Css",
+      "Javascript",
+      "Git",
+      "Php",
+      "Symfony",
+      "Sql",
+      "Figma",
+    ],
+    projectLink:
+      "https://www.notion.so/Pr-sentation-du-site-2258a8f238bf465a927e7dd0e7c1b348",
+    codeLink: "https://github.com/RudyDupuis/eni_sortir-solo",
+    docLink:
+      "https://www.notion.so/ENI-Sortir-2f9ad0e7548a4f24ab5376d226d77cce",
+  },
+  {
+    type: "project",
     name: "Pokedex",
     title: "Projet en solo",
     date: "Octobre 2023",

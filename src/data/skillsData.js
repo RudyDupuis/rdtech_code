@@ -11,6 +11,8 @@ export const skillsData = [
     "Next.js",
     "Vue.js",
     "Java",
+    "Php",
+    "Symfony",
     "Sql",
     "Seo",
     "Figma",
