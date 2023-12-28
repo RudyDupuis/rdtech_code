@@ -15,6 +15,21 @@
 
 export const journeyData = [
   {
+    type: "study",
+    name: "Stage à Grand Poitiers Communauté Urbaine",
+    title: null,
+    date: "Décembre 2023 - Février 2024",
+    dateNumb: [12, 2023],
+    img: null,
+    desc: null,
+    smallDesc:
+      "Stage sur le projet [SI]Lab v2, une application web de gestion pour les agents des collectivités territoriales",
+    techUsed: null,
+    projectLink: null,
+    codeLink: null,
+    docLink: null,
+  },
+  {
     type: "project",
     name: "ENI Sortir",
     title: "Projet en solo",
@@ -83,9 +98,9 @@ export const journeyData = [
   },
   {
     type: "study",
-    name: " Bac + 2 | Développeur Web et Web Mobile",
+    name: "Bac + 2 | Développeur Web et Web Mobile",
     title: null,
-    date: "Juillet 2023 - Aujourd'hui",
+    date: "Juillet 2023 - Mars 2024",
     dateNumb: [7, 2023],
     img: null,
     desc: null,
