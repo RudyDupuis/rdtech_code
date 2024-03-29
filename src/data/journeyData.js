@@ -68,6 +68,7 @@ export const journeyData = [
       "Sql",
       "Figma",
     ],
+    projectLink: null,
     codeLink: "https://github.com/RudyDupuis/CodeTogether",
     docLink:
       "https://www.notion.so/CodeTogether-5cacce4bfcf04512a270915ac3573399",
