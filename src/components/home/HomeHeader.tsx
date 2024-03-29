@@ -15,7 +15,7 @@ const HomeHeader = () => {
     <header className="home__header">
       <div className="home__header__div">
         <h1>Rudy Dupuis</h1>
-        <p>Dévelopeur Web et Web mobile</p>
+        <p>Développeur Web et Web mobile</p>
 
         {isSmallScreen && <ToolsBoxAnim />}
 
